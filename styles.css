@@ -120,6 +120,13 @@ h2 {
     border-radius: 12px;
     margin: 2px 4px 2px 0;
     font-size: 11px;
+    transition: transform 150ms ease, background-color 150ms ease, color 150ms ease;
+}
+
+.skill-item:hover {
+    background: #0066cc;
+    color: #ffffff;
+    transform: translateY(-1px);
 }
 
 .professional-summary {
