@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Morgan - Web Developer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f4f4f4;
+        }
+        
+        .container {
+            max-width: 8.5in;
+            height: 11in;
+            margin: 20px auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            overflow: hidden;
+        }
+        
+        header {
+            text-align: center;
+            border-bottom: 3px solid #0066cc;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+        }
+        
+        h1 {
+            font-size: 28px;
+            color: #0066cc;
+            margin-bottom: 5px;
+        }
+        
+        .contact-info {
+            font-size: 12px;
+            color: #666;
+        }
+        
+        .contact-info span {
+            margin: 0 10px;
+        }
+        
+        .contact-info a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        
+        h2 {
+            font-size: 14px;
+            color: #0066cc;
+            text-transform: uppercase;
+            margin-top: 12px;
+            margin-bottom: 8px;
+            padding-bottom: 4px;
+            border-bottom: 2px solid #0066cc;
+        }
+        
+        .section {
+            margin-bottom: 12px;
+            font-size: 13px;
+        }
+        
+        .job, .edu {
+            margin-bottom: 10px;
+        }
+        
+        .job-title {
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .company {
+            color: #0066cc;
+            font-style: italic;
+        }
+        
+        .date {
+            color: #666;
+            font-size: 12px;
+        }
+        
+        .description {
+            margin-top: 3px;
+            color: #555;
+            font-size: 12px;
+            line-height: 1.4;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+        
+        .skill-category {
+            font-weight: bold;
+            color: #0066cc;
+            font-size: 12px;
+        }
+        
+        .skill-items {
+            font-size: 12px;
+            color: #555;
+        }
+        
+        .skill-item {
+            display: inline-block;
+            background: #e8f0ff;
+            color: #0066cc;
+            padding: 2px 8px;
+            border-radius: 12px;
+            margin: 2px 4px 2px 0;
+            font-size: 11px;
+        }
+        
+        .professional-summary {
+            font-size: 12px;
+            color: #555;
+            line-height: 1.4;
+            margin-bottom: 8px;
+        }
+        
+        @media print {
+            body {
+                background: white;
+            }
+            .container {
+                margin: 0;
+                box-shadow: none;
+                max-width: none;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ALEX MORGAN</h1>
+            <div class="contact-info">
+                <span>📧 alex.morgan@email.com</span>
+                <span>📱 (555) 123-4567</span>
+                <span>🔗 <a href="#">linkedin.com/in/alexmorgan</a></span>
+                <span>💻 <a href="#">github.com/alexmorgan</a></span>
+            </div>
+        </header>
+
+        <section class="section">
+            <h2>Professional Summary</h2>
+            <p class="professional-summary">
+                Full-stack web developer with 5+ years of experience building scalable web applications. 
+                Expertise in Python and Django framework with strong focus on clean code, TDD, and agile methodologies. 
+                Proven track record of delivering high-quality projects on time and collaborating effectively with cross-functional teams.
+            </p>
+        </section>
+
+        <section class="section">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div>
+                    <div class="skill-category">Backend Development</div>
+                    <div class="skill-items">
+                        <span class="skill-item">Python 3</span>
+                        <span class="skill-item">Django</span>
+                        <span class="skill-item">Django REST</span>
+                        <span class="skill-item">Flask</span>
+                        <span class="skill-item">PostgreSQL</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="skill-category">Frontend & Tools</div>
+                    <div class="skill-items">
+                        <span class="skill-item">JavaScript</span>
+                        <span class="skill-item">React</span>
+                        <span class="skill-item">HTML/CSS</span>
+                        <span class="skill-item">Git</span>
+                        <span class="skill-item">Docker</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Professional Experience</h2>
+            
+            <div class="job">
+                <div class="job-title">Senior Web Developer</div>
+                <div><span class="company">Tech Solutions Inc.</span> <span class="date">Jan 2023 – Present</span></div>
+                <div class="description">
+                    • Led development of Django REST API serving 100k+ daily users with 99.9% uptime<br>
+                    • Architected microservices using Docker and implemented CI/CD pipelines reducing deployment time by 60%<br>
+                    • Mentored junior developers and conducted code reviews for team of 6 engineers
+                </div>
+            </div>
+
+            <div class="job">
+                <div class="job-title">Web Developer</div>
+                <div><span class="company">Digital Innovations Ltd.</span> <span class="date">Jun 2020 – Dec 2022</span></div>
+                <div class="description">
+                    • Developed and maintained 15+ Django web applications for Fortune 500 clients<br>
+                    • Implemented automated testing framework increasing code coverage from 45% to 85%<br>
+                    • Optimized database queries improving application performance by 40%
+                </div>
+            </div>
+
+            <div class="job">
+                <div class="job-title">Junior Developer</div>
+                <div><span class="company">StartUp Labs</span> <span class="date">Mar 2019 – May 2020</span></div>
+                <div class="description">
+                    • Built responsive web applications using Python Django and React<br>
+                    • Collaborated with product team to deliver features for B2B SaaS platform
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Education & Certifications</h2>
+            <div class="edu">
+                <div class="job-title">Bachelor of Science in Computer Science</div>
+                <div><span class="company">State University</span> <span class="date">2019</span></div>
+            </div>
+            <div class="edu">
+                <div class="job-title">AWS Certified Solutions Architect Associate</div>
+                <div><span class="date">2022</span></div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Key Projects</h2>
+            <div class="job">
+                <div class="job-title">E-Commerce Platform</div>
+                <div class="description">
+                    Full-featured Django-based e-commerce platform with payment integration, inventory management, and analytics dashboard. 
+                    Processed $2M+ in transactions annually.
+                </div>
+            </div>
+            <div class="job">
+                <div class="job-title">Real-time Analytics Dashboard</div>
+                <div class="description">
+                    Built React frontend with Django REST backend for real-time data visualization, supporting 50k concurrent users.
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
